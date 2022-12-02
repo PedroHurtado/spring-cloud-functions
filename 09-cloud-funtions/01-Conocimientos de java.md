@@ -9,16 +9,16 @@ Es aquella interface que solo posee un metodo abstracto y por tanto puede ser in
         T apply(T a, T b)
      }
 
-     Operation<int> sum -> (a,b)=>a+b
-     Operation<int> multiply -> (a,b)=>a*b
-     Operation<int> subtract -> (a,b)=>a-b
-     Operation<int> divide -> (a,b)=>a/b
+     Operation<int> sum  =  (a,b)->a+b;
+     Operation<int> multiply= (a,b)->a*b;
+     Operation<int> subtract= (a,b)->a-b;
+     Operation<int> divide=  (a,b)->a/b;
 
 
-     sum.apply(5,3) //8
-     multiply.apply(5,3) //15
-     subtract.apply(5,5) //0
-     divice.apply(4,2) //2
+     sum.apply(5,3); //8
+     multiply.apply(5,3); //15
+     subtract.apply(5,5); //0
+     divice.apply(4,2); //2
 
 
 ```
